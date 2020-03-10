@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="jp.kasaji.supermuscle" version="0.0.1" ios-CFBundleVersion="1" android-versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SUPER MUSCLE</name>
+    <description>
+        SUPER MUSCLE
+    </description>
+    <author email="kasajima.takashi@rabee.jp" href="https://rabee.jp">
+        kasajima takashi
+    </author>
+    <content src="http://localhost:3000/" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <resource-file src="res/android/drawable-mdpi/notification_icon.png" target="app/src/main/res/drawable-mdpi/notification_icon.png" />
+        <resource-file src="res/android/drawable-hdpi/notification_icon.png" target="app/src/main/res/drawable-hdpi/notification_icon.png" />
+        <resource-file src="res/android/drawable-xhdpi/notification_icon.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png" />
+        <resource-file src="res/android/drawable-xxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png" />
+        <resource-file src="res/android/drawable-xxxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="UseSwiftLanguageVersion" default="5" />
+        <edit-config file="*-Info.plist" mode="merge" target="NSMicrophoneUsageDescription">
+            <string>SUPER MUSCLEがマイクへのアクセスを必要としています。録音した音声は投稿に利用することができます。</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>SUPER MUSCLEがカメラへのアクセスを必要としています。撮影した写真はプロフィールや投稿で使うことができます。</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+            <string>SUPER MUSCLEがフォトライブラリへのアクセスを必要としています。写真はプロフィールや投稿で使うことができます。</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+            <string>SUPER MUSCLEがフォトライブラリへ写真を保存するためにアクセスを必要としています。</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+            <string>位置情報は投稿に利用されることがあります</string>
+        </edit-config>
+        <preference name="deployment-target" value="10.0" />
+        <preference name="target-device" value="handset" />
+    </platform>
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="AppendUserAgent" value="cordova CordovaApplication/0.0.1" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <plugin name="cordova-plugin-enable-multidex" spec="0.2.0" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-wkwebview-engine" spec="https://github.com/apache/cordova-plugin-wkwebview-engine#d0bd80a65bb0fd828bf70106c589d0448d8793d8" />
+    <preference name="Allow3DTouchLinkPreview" value="false" />
+    <plugin name="cordova-plugin-wkwebview-inputfocusfix" spec="^1.0.2" />
+    <plugin name="cordova-plugin-device" spec="^2.0.2" />
+    <plugin name="cordova-plugin-appinfo-sync" spec="~0.2.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
+    <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="default" />
+    <plugin name="cordova-open-native-settings" spec="^1.5.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
+    <plugin name="cordova-plugin-browsertab" spec="https://github.com/snuffy/cordova-plugin-browsertab" />
+    <plugin name="cordova-plugin-keyboard" spec="~1.2.0" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-social-message" spec="~0.4.0" />
+    <plugin name="cordova-plugin-localization" spec="0.0.1" />
+    <plugin name="cordova-plugin-taptic-engine" spec="2.1.0" />
+    <plugin name="cordova-plugin-keep-awake" spec="0.0.1" />
+    <plugin name="cordova-plugin-crop" spec="https://github.com/aldjunior/cordova-plugin-crop" />
+    <!-- <plugin name="cordova-plugin-sso" spec="0.2.8">
+        <variable name="TWITTER_KEY" value="" />
+        <variable name="TWITTER_SECRET" value="" />
+        <variable name="GOOGLE_CLIENT_ID" value="" />
+        <variable name="GOOGLE_REVERSED_CLIENT_ID" value="" />
+        <variable name="GOOGLE_WEB_OAUTH_CLIENT_ID" value=""/>
+    </plugin> -->
+    <plugin name="skwas-cordova-plugin-datetimepicker" spec="2.1.1" />
+</widget>

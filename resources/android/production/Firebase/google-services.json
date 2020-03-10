@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "246123613862",
+    "firebase_url": "https://radio-246502.firebaseio.com",
+    "project_id": "radio-246502",
+    "storage_bucket": "radio-246502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246123613862:android:9cff5752e9b6bd7195ee67",
+        "android_client_info": {
+          "package_name": "jp.uuum.rec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246123613862-a48ciuf9qf2mcmmq08d9t3o6thpvpr3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtAXgY-ZstOFs7AfboBBewIdTfmZ10s9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246123613862-s1c7o1gt80r4ut4n4c7qbarpe60mavog.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "246123613862-54iuuhsqi90f8ltg2ocum955rjcu81bv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.uuum.rec",
+                "app_store_id": "1480623780"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>498826534516-o1dn4h54j9ndnnmdg8idc0hgbqrnp0dm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.498826534516-o1dn4h54j9ndnnmdg8idc0hgbqrnp0dm</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>498826534516-khg13og8j73dat5mpmgdm989j22qa22l.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAcKcNyQduBbY_76DNAKxQJTofHE5KnZh8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>498826534516</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.rabee.rec.inhouse</string>
+	<key>PROJECT_ID</key>
+	<string>staging-rec-rabee-jp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>staging-rec-rabee-jp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:498826534516:ios:36ef95c1166e6229</string>
+	<key>DATABASE_URL</key>
+	<string>https://staging-rec-rabee-jp.firebaseio.com</string>
+</dict>
+</plist>

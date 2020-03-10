@@ -1,0 +1,89 @@
+{
+  "name": "super-muscle-app",
+  "version": "0.0.1",
+  "description": "super-muscle-app",
+  "main": "index.js",
+  "scripts": {
+    "add:ios": "cordova platform add ios",
+    "add:android": "cordova platform add android",
+    "release:ios": "cordova build ios --release --device; open ./platforms/ios/build/device/",
+    "release:android": "cordova build android --release; open ./platforms/android/build/outputs/apk/",
+    "run:ios": "cordova run ios --device",
+    "run:android": "cordova run android --device",
+    "emulate": "cordova emulate ios --target='iPhone-7'",
+    "clean": "rm -rf platforms/ plugins/ node_modules/ package-lock.json package.json; cp ./base_file/base_package.json ./package.json",
+    "build": "cordova build; yarn create_assets",
+    "build:ios": "cordova build ios; yarn create_assets",
+    "build:android": "cordova build; yarn create_assets",
+    "rebuild": "npm run clean; npm run add:ios; npm run add:android; npm run build",
+    "rebuild:ios": "yarn clean; yarn add:ios; yarn build",
+    "create_assets": "npx app-icon generate; cordova-splash;",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasaji-jp/super-muscle-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kasaji-jp/super-muscle-app#issues"
+  },
+  "homepage": "https://github.com/kasaji-jp/super-muscle-app#readme",
+  "dependencies": {
+    "cordova-ios": "^5.1.0-nightly.2019.11.10.9964c74b",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-compat": "^1.2.0"
+  },
+  "devDependencies": {
+    "cordova-open-native-settings": "^1.5.2",
+    "cordova-plugin-appinfo-sync": "^0.2.0",
+    "cordova-plugin-browsertab": "git+https://github.com/snuffy/cordova-plugin-browsertab.git",
+    "cordova-plugin-camera": "^4.1.0",
+    "cordova-plugin-crop": "git+https://github.com/aldjunior/cordova-plugin-crop.git",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-enable-multidex": "^0.2.0",
+    "cordova-plugin-inappbrowser": "^1.7.2",
+    "cordova-plugin-keep-awake": "0.0.1",
+    "cordova-plugin-keyboard": "^1.2.0",
+    "cordova-plugin-localization": "0.0.1",
+    "cordova-plugin-social-message": "^0.4.0",
+    "cordova-plugin-splashscreen": "^5.0.3",
+    "cordova-plugin-statusbar": "git+https://github.com/apache/cordova-plugin-statusbar.git",
+    "cordova-plugin-taptic-engine": "^2.1.0",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-wkwebview-engine": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#d0bd80a65bb0fd828bf70106c589d0448d8793d8",
+    "cordova-plugin-wkwebview-inputfocusfix": "^1.0.4",
+    "skwas-cordova-plugin-datetimepicker": "^2.1.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-enable-multidex": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-wkwebview-engine": {},
+      "cordova-plugin-wkwebview-inputfocusfix": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-appinfo-sync": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-open-native-settings": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-browsertab": {
+        "CUSTOM_TAB_COLOR_RGB": "#ffffff"
+      },
+      "cordova-plugin-keyboard": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-social-message": {},
+      "cordova-plugin-localization": {},
+      "cordova-plugin-taptic-engine": {},
+      "cordova-plugin-keep-awake": {
+        "USESWIFTLANGUAGEVERSION": "4"
+      },
+      "cordova-plugin-crop": {},
+      "skwas-cordova-plugin-datetimepicker": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}
