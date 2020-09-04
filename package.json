@@ -43,7 +43,7 @@
     "cordova-plugin-crop": "git+https://github.com/aldjunior/cordova-plugin-crop.git",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-enable-multidex": "^0.2.0",
-    "cordova-plugin-inappbrowser": "^1.7.2",
+    "cordova-plugin-inappbrowser": "^4.0.0",
     "cordova-plugin-keep-awake": "0.0.1",
     "cordova-plugin-keyboard": "^1.2.0",
     "cordova-plugin-localization": "0.0.1",
